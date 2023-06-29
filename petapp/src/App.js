@@ -1,8 +1,15 @@
+import { Outlet } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
-      <p>World</p>
+      <main>
+        <Outlet />
+      </main>
+
+      <ToastContainer />
     </div>
   );
 }
